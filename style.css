@@ -1,0 +1,174 @@
+/* mobile styles */
+
+/* figure out if some parent should be absolute and then everything within relative? */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato-light';
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.h1-center {
+    text-align: center;
+}
+
+.welcome {
+        height: 95vh;
+
+}
+
+.welcome-name {
+   /*position: absolute;
+    left: 0.7em;
+    top: 3.6em;*/
+    padding-top: 3.6em;
+    padding-left: 0.7em;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+h1.welcome-name {
+    padding-right: 2em;
+}
+
+.intro-p {
+    /*position: absolute;
+    top: 15.2em;
+    left: 1.7em;*/
+    padding-left: 1.7em;
+    padding-right: 2.3em;
+}
+
+h2 {
+    margin: 0;
+    font-weight: normal;
+    padding-top: 1em;
+    padding-left: 0.7em;
+}
+
+.videography {
+    /*position: absolute;
+    top: 50em;
+    left: 1.7em;*/
+    width: 100vw;
+}
+
+.animation {
+    width: 100vw;
+}
+
+.webdesign {
+    width: 100vw;
+}
+
+.photography {
+    width: 100vw;
+    height: 100vh;
+}
+
+.knowmore {
+    width: 100vw;
+    height: 50vh;
+}
+
+.knowmore h2 {
+    text-align: center;
+    padding-left: 0;
+    border: none;
+}
+
+.get-in-touch {
+    font-size: 0.8em;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 0.8em 2.5em;
+}
+
+.underline {
+    border-bottom: 2px solid black;
+    margin: 0.3em 2em 0em 1em;
+}
+
+.portrait {
+    background-color: lightgray;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+
+div.portrait {
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+input {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    /*padding: 0.5em 0em 0.5em;
+    margin: 0em;*/
+}
+
+nav {
+    max-height: 0;
+    overflow: hidden;
+}
+
+input:checked~nav {
+    max-height: 500px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 90vw;
+    height: auto;
+    padding-left: 1em;
+    padding-top: 2em;
+}
+
+a img {
+    width: 5vw;
+    height: auto;
+}
+
+
+/* tablet devices */
+
+@media only screen and (min-width: 40em) {
+
+    nav {
+        max-height: 2em;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0em 0.6em;
+    }
+    label {
+        display: none;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+
+
