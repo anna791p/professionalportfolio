@@ -9,9 +9,9 @@
 
 <body>
     <main>
-        <header>
+        <!--<header>
         </header>
-        <label for="toggle">MENU</label>
+        <label for="toggle"><img src="icons/burgermenu.png"></label>
         <input type="checkbox" id="toggle">
 
         <nav>
@@ -20,12 +20,43 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
-        </nav>
+        </nav> -->
+
+
+        <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()">
+    <div class="burger-menu">
+        <div class="patty"></div>
+        <div class="patty"></div>
+        <div class="patty"></div>
+    </div>
+
+</span>
+
+
+
+
 
         <div class="main-content">
         <article class="welcome">
             <h1 class="welcome-name">ANNABELLE <strong>GOLDSWORTHY</strong></h1>
-            <p class="intro-p">Videography + Animation + Web Design + Photography + Digital Marketing + Social Media + SEO/SEM?</p>
+            <p class="intro-p">Videography | Animation | Web Design | Photography | Digital Marketing | Social Media | SEO/SEM?</p>
         </article>
 
         <article class="videography">
@@ -40,7 +71,6 @@
         <article class="animation">
             <h2>ANIMATION</h2>
             <div class="underline"></div>
-            <img src="image/an-pineapple.png">
             <img src="image/an-alt.png">
         </article>
 
@@ -61,12 +91,18 @@
 
         <article class="knowmore">
             <h2>WANT TO KNOW <strong>MORE</strong>?</h2>
-
+            <div class="in-touch-link">
             <a class="get-in-touch" href="contact.html">GET IN TOUCH</a>
+            </div>
+            <div class="so-me">
+            <a href="https://www.linkedin.com/in/annabelle-claire-goldsworthy-066045151/"><img class="icons" src="icons/linkedin.svg"></a>
+            <a href="https://www.instagram.com/annabellegoldsworthy/" target="_blank"><img class="icons" src="icons/icon-insta-black.svg"></a>
+            <a href="https://github.com/anna791p" target="_blank"><img class="icons" src="icons/github.svg"></a>
+            </div>
         </article>
 
         </div>
     </main>
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 </html>
