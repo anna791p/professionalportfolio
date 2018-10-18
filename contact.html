@@ -10,16 +10,31 @@
 <body>
     <main>
         <header>
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="index.html">PORTFOLIO</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- W3 Schools Curtain Nav -->
+            <span onclick="openNav()">
+                <div class="burger-menu">
+                    <div class="patty"></div>
+                    <div class="patty"></div>
+                    <div class="patty"></div>
+                </div>
+            </span>
         </header>
-        <label for="toggle">MENU</label>
-        <input type="checkbox" id="toggle">
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
         <article>
             <h1 class="h1-center">GET IN TOUCH</h1>
             <p>something catchy</p>
@@ -30,13 +45,13 @@
           method="POST">
           <label for="name">Name</label>
           <input type="text"
-            name="name"><br>
+            name="name">
           <label for="email">Email</label>
           <input type="email"
-            name="email"><br>
+            name="email">
           <label for="subject">Subject</label>
           <input type="text"
-            name="subject"><br>
+            name="subject"><!--<br>-->
           <label for="message">Message</label>
           <textarea name="message"
             id="name"></textarea>
@@ -54,6 +69,6 @@
             <a href="https://github.com/anna791p" target="_blank"><img class="icons" src="icons/github.svg"></a>
         </article>
     </main>
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,11 +11,20 @@ body {
     margin: 0;
 }
 
+/*header {
+    width: 100vw;
+}*/
+
+.burger-menu {
+    float: right;
+    padding: 20px;
+}
+
 
 .patty {
-    border-bottom: 3px solid #000;
-    width: 28px;
-    margin: 2px;
+    border-bottom: 3px solid #fff;
+    width: 23px;
+    margin: 4px;
 }
 
 
@@ -65,154 +74,109 @@ body {
     font-size: 60px;
 }
 
-
-
+ul {
+    list-style-type: none;
+}
 
 
 h1 {
     font-weight: normal;
 }
-
 .h1-center {
     text-align: center;
 }
-
 .welcome {
-        height: 95vh;
+    height: 95vh;
+    /*background-image: url(image/hk.jpg);*/
+    background-color: #000;
+    background-size: cover;
+    color: #fff;
 
 }
-
 .welcome-name {
-   /*position: absolute;
-    left: 0.7em;
-    top: 3.6em;*/
     padding-top: 3.6em;
     padding-left: 0.7em;
     font-size: 2.3em;
     margin: 0;
 }
-
 h1.welcome-name {
     padding-right: 2em;
 }
-
 .intro-p {
     /*position: absolute;
     top: 15.2em;
     left: 1.7em;*/
+
     padding-left: 1.7em;
     padding-right: 2.3em;
 }
-
 h2 {
     margin: 0;
     font-weight: normal;
     padding-top: 1em;
     padding-left: 0.7em;
 }
-
 .videography {
     /*position: absolute;
     top: 50em;
     left: 1.7em;*/
     width: 100vw;
 }
-
 .animation {
     width: 100vw;
 }
-
 .webdesign {
     width: 100vw;
 }
-
 .photography {
     width: 100vw;
     height: 100vh;
 }
-
 .knowmore {
     width: 100vw;
     height: 50vh;
 }
-
 .knowmore h2 {
     text-align: center;
     padding-left: 0;
     border: none;
 }
-
 .get-in-touch {
     font-size: 0.8em;
     border: 1px solid black;
     background-color: transparent;
     padding: 0.8em 2.5em;
 }
-
 .in-touch-link {
     text-align: center;
     margin: 2em;
 }
-
 .underline {
     border-bottom: 2px solid black;
     margin: 0.3em 2em 1.5em 1em;
 }
-
 .portrait {
     background-color: lightgray;
     width: 10em;
     height: 10em;
     border-radius: 50%;
 }
-
 div.portrait {
     margin: auto;
 }
 
-
-
-/* NAVIGATION */
-
-/*
-input {
-    display: none;
-}
-
-label {
-    cursor: pointer;
-    /*padding: 0.5em 0em 0.5em;
-    margin: 0em;*/
-/*}
-
-nav {
-    max-height: 0;
-    overflow: hidden;
-}
-
-input:checked~nav {
-    max-height: 500px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-} */
-
 a {
     text-decoration: none;
 }
-
 img {
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding: 1.5em 3.5em;
 }
-
-a img {
+/*a img {
     width: 20vw;
     height: auto;
-}
+}*/
 
 /*form starts*/
 
@@ -225,7 +189,6 @@ div.form {
   width: 65vw;
   margin: 0 auto;
 }
-
 label {
   font-family: 'print clearly', sans-serif;
 }
@@ -241,7 +204,6 @@ select {
   margin-top: 2px;
   padding: 0;
 }
-
 input[type=email] {
   width: 100%;
   height: 2em;
@@ -250,7 +212,6 @@ input[type=email] {
   margin-top: 2px;
   padding: 0;
 }
-
 input[type=submit] {
   width: 100%;
   height: 3em;
@@ -259,7 +220,6 @@ input[type=submit] {
   padding: 0;
   margin-top: 0.5em;
 }
-
 textarea {
   resize: none;
   width: 100%;
@@ -274,43 +234,92 @@ label img {
     width: 40px;
     padding: 10px 0px 0px 10px;
 }
-
 .so-me {
     text-align: center;
-    margin-top: 6em;
+    margin-top: 11.3em;
 }
-
 img.icons {
     width: 2em;
     padding: 0;
+    margin: 0;
     justify-content: center;
 }
 
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+
+.container {
+    position: relative;
+}
+
+.hover-overlay {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.container:hover .hover-overlay {
+    opacity: 0.5;
+}
+
+img.video {
+    padding: 0;
+}
 
 /* tablet devices */
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 480px) {
 
-    nav {
-        max-height: 2em;
+    img {
+        padding: 2em 5em;
     }
-    nav li {
-        display: inline-block;
-        padding: 0em 0.6em;
-    }
-    label {
-        display: none;
-    }
-
     div.form label {
         display: block;
     }
-
-    br {
+    /*br {
         display: none;
+    }*/
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .video-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 0em 2em;
+    }
+    .design-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 0em 2em;
+    }
+    img {
+        padding: 2em 2em 2em 2em;
+    }
+
+    .underline {
+        margin: 0.3em 3em 1.5em 1em;
     }
 
 }
 
+@media only screen and (min-width: 1024px) {
+
+    h2 {
+        margin-top: 1em;
+    }
+    .underline {
+        margin-bottom: 3em;
+    }
+    .video-content {
+        padding: 0em 6em;
+    }
+
+}
 
 
