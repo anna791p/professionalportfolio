@@ -1,7 +1,5 @@
 /* mobile styles */
 
-/* figure out if some parent should be absolute and then everything within relative? */
-
 * {
     box-sizing: border-box;
 }
@@ -11,15 +9,11 @@ body {
     margin: 0;
 }
 
-/*header {
-    width: 100vw;
-}*/
-
 .burger-menu {
     float: right;
     padding: 20px;
+    width: 100%;
 }
-
 
 .patty {
     border-bottom: 3px solid #fff;
@@ -27,6 +21,11 @@ body {
     margin: 4px;
 }
 
+.black-patty {
+    border-bottom: 3px solid #000;
+    width: 23px;
+    margin: 4px;
+}
 
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -77,7 +76,6 @@ body {
 ul {
     list-style-type: none;
 }
-
 
 h1 {
     font-weight: normal;
@@ -135,34 +133,33 @@ h2 {
 .knowmore {
     width: 100vw;
     height: 50vh;
+    background-color: #fcfcfc/*#e2e2e2*/;
+    padding-top: 5em;
 }
 .knowmore h2 {
     text-align: center;
     padding-left: 0;
     border: none;
+    color: #272727;
 }
 .get-in-touch {
     font-size: 0.8em;
-    border: 1px solid black;
+    border: 1px solid #272727;
     background-color: transparent;
     padding: 0.8em 2.5em;
+    color: #272727;
+}
+.get-in-touch:hover {
+    color: #fcfcfc;
+    background-color: #272727;
 }
 .in-touch-link {
     text-align: center;
-    margin: 2em;
+    margin: 2.5em;
 }
 .underline {
     border-bottom: 2px solid black;
     margin: 0.3em 2em 1.5em 1em;
-}
-.portrait {
-    background-color: lightgray;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-}
-div.portrait {
-    margin: auto;
 }
 
 a {
@@ -178,19 +175,64 @@ img {
     height: auto;
 }*/
 
+.center-text {
+    /*text-align: center;*/
+    padding: 0 2.5em;
+}
+
+section {
+        width: 95%;
+        height: auto;
+        margin: 0 3% 0 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+.vid-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.26%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.photo-me {
+    text-align: center;
+}
+
+img.portrait {
+    width: 15em;
+    justify-content: center;
+}
+
+div img.portrait{
+    justify-content: center;
+}
+
+/*.center-text nth childe things*/
+
+.email {
+    text-align: center;
+}
+
 /*form starts*/
 
 div.form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  /*e1e3e5*/
   padding: 10px;
   margin: 0px 5px 5px 5px;
-  width: 65vw;
+  width: 85vw;
   margin: 0 auto;
 }
 label {
-  font-family: 'print clearly', sans-serif;
+  font-family: 'lato-light' sans-serif;
+  font-size: 0.8em;
 }
 
 /* w3 schools */
@@ -198,25 +240,28 @@ label {
 input[type=text],
 select {
   width: 100%;
-  height: 2em;
+  height: 3.3em;
   border: none;
   margin-bottom: 10px;
   margin-top: 2px;
   padding: 0;
+  border: 1px solid #ccc;
 }
 input[type=email] {
   width: 100%;
-  height: 2em;
+  height: 3.3em;
   border: none;
   margin-bottom: 10px;
   margin-top: 2px;
   padding: 0;
+  border: 1px solid #ccc;
 }
 input[type=submit] {
-  width: 100%;
-  height: 3em;
+  width: 150px;
+  height: 3.5em;
   border: none;
-  background-color: #f4c101;
+  background-color: #272727;
+  color: #fff;
   padding: 0;
   margin-top: 0.5em;
 }
@@ -226,6 +271,7 @@ textarea {
   height: 20vh;
   border: none;
   padding: 0;
+  border: 1px solid #ccc;
 }
 
 /*form ends*/
@@ -236,13 +282,15 @@ label img {
 }
 .so-me {
     text-align: center;
-    margin-top: 11.3em;
+    margin-top: 6em;
+}
+.so-me-contact{
+    text-align: center;
 }
 img.icons {
     width: 2em;
     padding: 0;
     margin: 0;
-    justify-content: center;
 }
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
@@ -264,10 +312,6 @@ img.icons {
     opacity: 0.5;
 }
 
-img.video {
-    padding: 0;
-}
-
 /* tablet devices */
 
 @media only screen and (min-width: 480px) {
@@ -281,6 +325,9 @@ img.video {
     /*br {
         display: none;
     }*/
+    .center-text {
+        text-align: center;
+    }
 
 }
 
@@ -304,6 +351,18 @@ img.video {
 
     .underline {
         margin: 0.3em 3em 1.5em 1em;
+    }
+
+    section {
+        width: 60%;
+        height: auto;
+        margin: 0 20% 0 20%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.form {
+        width: 50vw;
     }
 
 }
