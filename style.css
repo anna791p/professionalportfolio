@@ -85,8 +85,8 @@ h1 {
 }
 .welcome {
     height: 95vh;
-    /*background-image: url(image/hk.jpg);*/
-    background-color: #000;
+    background-image: url(image/hero.JPG);
+    /*background-color: #000;*/
     background-size: cover;
     color: #fff;
 
@@ -178,6 +178,10 @@ img {
 .center-text {
     /*text-align: center;*/
     padding: 0 2.5em;
+}
+
+.about {
+    padding: 0 1.2em;
 }
 
 section {
@@ -293,6 +297,10 @@ img.icons {
     margin: 0;
 }
 
+.copyright {
+    text-align: center;
+}
+
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
 
 .container {
@@ -319,6 +327,9 @@ img.icons {
     img {
         padding: 2em 5em;
     }
+    img.portrait {
+        padding: 1.5em 3.5em;
+    }
     div.form label {
         display: block;
     }
@@ -327,6 +338,9 @@ img.icons {
     }*/
     .center-text {
         text-align: center;
+    }
+    .about {
+        padding: 0em 4.5em;
     }
 
 }
@@ -364,6 +378,9 @@ img.icons {
     div.form {
         width: 50vw;
     }
+    .about {
+        padding: 0em 10em;
+    }
 
 }
 
@@ -377,6 +394,9 @@ img.icons {
     }
     .video-content {
         padding: 0em 6em;
+    }
+    .about {
+        padding: 0em 17em;
     }
 
 }
