@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'lato-light';
+    font-family: 'lato-light', 'helvetica', sans-serif;
     margin: 0;
 }
 
@@ -85,8 +85,7 @@ h1 {
 }
 .welcome {
     height: 95vh;
-    background-image: url(image/hero.JPG);
-    /*background-color: #000;*/
+    background-image: url(image/hero-mobile.jpg);
     background-size: cover;
     color: #fff;
 
@@ -133,7 +132,7 @@ h2 {
 .knowmore {
     width: 100vw;
     height: 50vh;
-    background-color: #fcfcfc/*#e2e2e2*/;
+    background-color: #f8d857;
     padding-top: 5em;
 }
 .knowmore h2 {
@@ -286,7 +285,7 @@ label img {
 }
 .so-me {
     text-align: center;
-    margin-top: 6em;
+    margin-top: 4em;
 }
 .so-me-contact{
     text-align: center;
@@ -320,6 +319,15 @@ img.icons {
     opacity: 0.5;
 }
 
+.project-name {
+    position: relative;
+    left: 65px;
+    bottom: 60px;
+    font-family: 'lato-light', sans-serif;
+    color: white;
+    font-size: 1.5em;
+}
+
 /* tablet devices */
 
 @media only screen and (min-width: 480px) {
@@ -342,6 +350,12 @@ img.icons {
     .about {
         padding: 0em 4.5em;
     }
+    .project-name {
+    left: 90px;
+    bottom: 70px;
+    font-size: 1.5em;
+    }
+
 
 }
 
@@ -382,6 +396,18 @@ img.icons {
         padding: 0em 10em;
     }
 
+    .welcome {
+        background-image: url(image/hero.JPG);
+    }
+    .so-me {
+    text-align: center;
+    margin-top: 6em;
+}
+    .project-name {
+        left: 50px;
+        bottom: 72px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -398,6 +424,24 @@ img.icons {
     .about {
         padding: 0em 17em;
     }
+    .welcome-name {
+        padding-top: 2.1em;
+    }
+    h1.welcome-name {
+        padding-right: 1.4em;
+    }
+    .welcome-float {
+        float: right;
+        font-size: 1.2em
+    }
+    .project-name {
+    position: relative;
+    left: 60px;
+    bottom: 90px;
+    font-family: 'lato-light', sans-serif;
+    color: white;
+    font-size: 2em;
+}
 
 }
 

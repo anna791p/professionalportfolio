@@ -1,5 +1,5 @@
 <?php
-$to     = 'email';
+$to     = 'hello@annabellegoldsworthy.com';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $sub = $_POST['subject'];
@@ -11,7 +11,7 @@ $headers = 'From: hello@annabellegoldsworthy.com' . "\r\n" .
     'X-Mailer: PHP/' .phpversion();
 
 if(mail($to, $subject, $message, $headers)){
-    header("Location: ***");
+    header("Location: index.html");
 } else {
     echo "Oops. It seems as though there was an error and your message failed to send";
 }
